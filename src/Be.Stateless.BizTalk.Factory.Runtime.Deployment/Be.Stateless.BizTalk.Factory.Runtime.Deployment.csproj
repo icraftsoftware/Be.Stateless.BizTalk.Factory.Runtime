@@ -11,12 +11,12 @@
     <PackageReference Include="Be.Stateless.BizTalk.Messaging" Version="2.0.21008.36224" />
     <PackageReference Include="Be.Stateless.BizTalk.Pipeline.MicroComponents" Version="2.0.21012.19670" />
     <PackageReference Include="Be.Stateless.BizTalk.ServiceModel" Version="2.0.21011.43461" />
-    <PackageReference Include="Be.Stateless.BizTalk.Settings" Version="2.0.21012.26139" />
+    <PackageReference Include="Be.Stateless.BizTalk.Settings" Version="2.0.21040.23430" />
     <PackageReference Include="Be.Stateless.BizTalk.Stream" Version="2.0.21008.32614" />
     <PackageReference Include="Be.Stateless.BizTalk.Transform.ExtensionObjects" Version="2.0.21008.37412" />
     <PackageReference Include="Be.Stateless.BizTalk.XLang" Version="2.0.21008.34815" />
     <PackageReference Include="Be.Stateless.BizTalk.Xml" Version="2.0.21008.24393" />
-    <PackageReference Include="Be.Stateless.Common" Version="2.0.21005.39505" />
+    <PackageReference Include="Be.Stateless.Common" Version="2.0.21034.37240" />
     <PackageReference Include="Be.Stateless.Extensions" Version="2.0.21005.38790" />
     <PackageReference Include="Be.Stateless.Stream" Version="2.0.21005.40362" />
     <PackageReference Include="Be.Stateless.Xml" Version="2.0.21033.21986" />
@@ -24,6 +24,9 @@
   </ItemGroup>
 
  <ItemGroup>
+    <None Update="config\machine.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Manifest.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

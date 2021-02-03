@@ -1,31 +1,50 @@
-﻿<Project Sdk="Microsoft.Build.NoTargets/2.0.1">
+﻿<Project Sdk="Microsoft.Build.NoTargets/3.0.4">
 
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
- <ItemGroup>
-    <PackageReference Include="Be.Stateless.BizTalk.Abstractions" Version="2.0.21007.39752" />
-    <PackageReference Include="Be.Stateless.BizTalk.Activity.Tracking" Version="2.0.21020.1792" />
-    <PackageReference Include="Be.Stateless.BizTalk.Messaging" Version="2.0.21008.36224" />
-    <PackageReference Include="Be.Stateless.BizTalk.Pipeline.MicroComponents" Version="2.0.21012.19670" />
-    <PackageReference Include="Be.Stateless.BizTalk.ServiceModel" Version="2.0.21011.43461" />
-    <PackageReference Include="Be.Stateless.BizTalk.Settings" Version="2.0.21012.26139" />
-    <PackageReference Include="Be.Stateless.BizTalk.Stream" Version="2.0.21008.32614" />
-    <PackageReference Include="Be.Stateless.BizTalk.Transform.ExtensionObjects" Version="2.0.21008.37412" />
-    <PackageReference Include="Be.Stateless.BizTalk.XLang" Version="2.0.21008.34815" />
-    <PackageReference Include="Be.Stateless.BizTalk.Xml" Version="2.0.21008.24393" />
-    <PackageReference Include="Be.Stateless.Common" Version="2.0.21005.39505" />
-    <PackageReference Include="Be.Stateless.Extensions" Version="2.0.21005.38790" />
-    <PackageReference Include="Be.Stateless.Stream" Version="2.0.21005.40362" />
-    <PackageReference Include="Be.Stateless.Xml" Version="2.0.21033.21986" />
-    <PackageReference Include="log4net" Version="2.0.12" />
+  <PropertyGroup>
+    <CopyOutputSymbolsToPublishDirectory>false</CopyOutputSymbolsToPublishDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Be.Stateless.BizTalk.Abstractions" Version="2.1.22025.23485" />
+    <PackageReference Include="Be.Stateless.BizTalk.Messaging" Version="2.1.22025.26745" />
+    <PackageReference Include="Be.Stateless.BizTalk.Pipeline.MicroComponents" Version="2.1.22025.28006" />
+    <PackageReference Include="Be.Stateless.BizTalk.ServiceModel" Version="2.1.22025.27762" />
+    <PackageReference Include="Be.Stateless.BizTalk.Settings" Version="2.1.22025.21655" />
+    <PackageReference Include="Be.Stateless.BizTalk.Stream" Version="2.1.22025.26169" />
+    <PackageReference Include="Be.Stateless.BizTalk.Transform.ExtensionObjects" Version="2.1.22025.27647" />
+    <PackageReference Include="Be.Stateless.BizTalk.XLang" Version="2.1.22025.26179" />
+    <PackageReference Include="Be.Stateless.BizTalk.Xml" Version="2.1.22025.24612" />
+    <PackageReference Include="Be.Stateless.Extensions" Version="2.1.22025.20499" />
+    <PackageReference Include="Be.Stateless.Reflection" Version="2.1.22025.20814" />
+    <PackageReference Include="Be.Stateless.Runtime" Version="2.1.22025.21140" />
+    <PackageReference Include="Be.Stateless.Security" Version="2.1.22025.21680" />
+    <PackageReference Include="Be.Stateless.Stream" Version="2.1.22025.21947" />
+    <PackageReference Include="Be.Stateless.Xml" Version="2.1.22025.22704" />
+    <PackageReference Include="log4net" Version="2.0.14" />
   </ItemGroup>
 
- <ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Be.Stateless.BizTalk.Factory.Logging\Be.Stateless.BizTalk.Factory.Logging.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="config\*.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Manifest.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+
+  <Target Name="BeforePrepareForBuild" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <PublishDir>$(PublishDir)\$(FileVersion)\</PublishDir>
+    </PropertyGroup>
+  </Target>
+
 </Project>

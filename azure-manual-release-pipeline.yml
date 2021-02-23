@@ -13,3 +13,4 @@ extends:
   parameters:
     Major: 2
     Minor: 0
+    SkipTest: true

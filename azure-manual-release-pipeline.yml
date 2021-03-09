@@ -5,7 +5,6 @@ resources:
     - repository: pipelineTemplateRepository
       type: github
       name: emmanuelbenitez/Be.Stateless.Build.Agent.Yaml.Pipeline.Templates
-      ref: refs/heads/fix-bts-package
       endpoint: github.com_icraftsoftware
 
 extends:

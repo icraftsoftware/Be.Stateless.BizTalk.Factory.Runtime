@@ -7,4 +7,4 @@ Deployment package for BizTalk Factory Artifacts.
 
 ## Deployment Packages
 
-[![Deployment Package](https://img.shields.io/nuget/v/Be.Stateless.BizTalk.XLang.svg?label=Be.Stateless.BizTalk.Factory.Runtime.Deployment.zip&style=flat)](https://github.com/icraftsoftware/Be.Stateless.BizTalk.Factory.Runtime.Deployment/releases/latest/download/Be.Stateless.BizTalk.Factory.Runtime.Deployment.zip)
+[![Deployment Package](https://img.shields.io/github/v/release/icraftsoftware/Be.Stateless.BizTalk.Factory.Runtime.Deployment?label=Be.Stateless.BizTalk.Factory.Runtime.Deployment.zip&style=flat)](https://github.com/icraftsoftware/Be.Stateless.BizTalk.Factory.Runtime.Deployment/releases/latest/download/Be.Stateless.BizTalk.Factory.Runtime.Deployment.zip)

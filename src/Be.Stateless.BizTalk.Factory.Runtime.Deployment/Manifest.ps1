@@ -24,8 +24,9 @@ Set-StrictMode -Version Latest
 
 LibraryManifest -Name BizTalk.Factory.Runtime -Description 'BizTalk.Factory''s Comprehensive Set of BizTalk Server Runtime Components.' -Build {
    Assembly -Path (Get-ResourceItem -Name log4net,
-      Be.Stateless.Common,
       Be.Stateless.Extensions,
+      Be.Stateless.Reflection,
+      Be.Stateless.Security,
       Be.Stateless.Stream,
       Be.Stateless.Xml,
       Be.Stateless.BizTalk.Abstractions,

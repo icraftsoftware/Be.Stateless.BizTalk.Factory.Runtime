@@ -7,19 +7,20 @@
 
   <ItemGroup>
     <PackageReference Include="Be.Stateless.BizTalk.Abstractions" Version="2.0.21007.39752" />
-    <PackageReference Include="Be.Stateless.BizTalk.Activity.Tracking" Version="2.0.21020.1792" />
-    <PackageReference Include="Be.Stateless.BizTalk.Messaging" Version="2.0.21008.36224" />
-    <PackageReference Include="Be.Stateless.BizTalk.Pipeline.MicroComponents" Version="2.0.21012.19670" />
-    <PackageReference Include="Be.Stateless.BizTalk.ServiceModel" Version="2.0.21011.43461" />
-    <PackageReference Include="Be.Stateless.BizTalk.Settings" Version="2.0.21040.23430" />
-    <PackageReference Include="Be.Stateless.BizTalk.Stream" Version="2.0.21008.32614" />
-    <PackageReference Include="Be.Stateless.BizTalk.Transform.ExtensionObjects" Version="2.0.21008.37412" />
-    <PackageReference Include="Be.Stateless.BizTalk.XLang" Version="2.0.21008.34815" />
-    <PackageReference Include="Be.Stateless.BizTalk.Xml" Version="2.0.21008.24393" />
-    <PackageReference Include="Be.Stateless.Common" Version="2.0.21060.31482" />
+    <PackageReference Include="Be.Stateless.BizTalk.Activity.Tracking" Version="2.0.21069.29808" />
+    <PackageReference Include="Be.Stateless.BizTalk.Messaging" Version="2.0.21071.55312" />
+    <PackageReference Include="Be.Stateless.BizTalk.Pipeline.MicroComponents" Version="2.0.21072.40980" />
+    <PackageReference Include="Be.Stateless.BizTalk.ServiceModel" Version="2.0.21072.31919" />
+    <PackageReference Include="Be.Stateless.BizTalk.Settings" Version="2.0.21072.41386" />
+    <PackageReference Include="Be.Stateless.BizTalk.Stream" Version="2.0.21071.54649" />
+    <PackageReference Include="Be.Stateless.BizTalk.Transform.ExtensionObjects" Version="2.0.21071.55824" />
+    <PackageReference Include="Be.Stateless.BizTalk.XLang" Version="2.0.21071.55080" />
+    <PackageReference Include="Be.Stateless.BizTalk.Xml" Version="2.0.21071.53936" />
     <PackageReference Include="Be.Stateless.Extensions" Version="2.0.21005.38790" />
-    <PackageReference Include="Be.Stateless.Stream" Version="2.0.21005.40362" />
-    <PackageReference Include="Be.Stateless.Xml" Version="2.0.21033.21986" />
+    <PackageReference Include="Be.Stateless.Reflection" Version="2.0.21071.48539" />
+    <PackageReference Include="Be.Stateless.Security" Version="2.0.21071.48839" />
+    <PackageReference Include="Be.Stateless.Stream" Version="2.0.21071.30174" />
+    <PackageReference Include="Be.Stateless.Xml" Version="2.0.21071.49651" />
     <PackageReference Include="log4net" Version="2.0.12" />
   </ItemGroup>
 

@@ -30,7 +30,6 @@ LibraryManifest -Name BizTalk.Factory.Runtime -Description 'BizTalk.Factory''s C
       Be.Stateless.Stream,
       Be.Stateless.Xml,
       Be.Stateless.BizTalk.Abstractions,
-      Be.Stateless.BizTalk.Activity.Tracking,
       Be.Stateless.BizTalk.Messaging,
       Be.Stateless.BizTalk.Pipeline.MicroComponents,
       Be.Stateless.BizTalk.ServiceModel,

@@ -5,21 +5,25 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <CopyOutputSymbolsToPublishDirectory>false</CopyOutputSymbolsToPublishDirectory>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Be.Stateless.BizTalk.Abstractions" Version="2.0.21007.39752" />
-    <PackageReference Include="Be.Stateless.BizTalk.Messaging" Version="2.0.21084.29081" />
-    <PackageReference Include="Be.Stateless.BizTalk.Pipeline.MicroComponents" Version="2.0.21084.31924" />
-    <PackageReference Include="Be.Stateless.BizTalk.ServiceModel" Version="2.0.21084.30790" />
+    <PackageReference Include="Be.Stateless.BizTalk.Messaging" Version="2.0.21104.45537" />
+    <PackageReference Include="Be.Stateless.BizTalk.Pipeline.MicroComponents" Version="2.0.21104.47727" />
+    <PackageReference Include="Be.Stateless.BizTalk.ServiceModel" Version="2.0.21104.46973" />
     <PackageReference Include="Be.Stateless.BizTalk.Settings" Version="2.0.21072.41386" />
-    <PackageReference Include="Be.Stateless.BizTalk.Stream" Version="2.0.21071.54649" />
-    <PackageReference Include="Be.Stateless.BizTalk.Transform.ExtensionObjects" Version="2.0.21082.38395" />
-    <PackageReference Include="Be.Stateless.BizTalk.XLang" Version="2.0.21071.55080" />
-    <PackageReference Include="Be.Stateless.BizTalk.Xml" Version="2.0.21071.53936" />
+    <PackageReference Include="Be.Stateless.BizTalk.Stream" Version="2.0.21104.44616" />
+    <PackageReference Include="Be.Stateless.BizTalk.Transform.ExtensionObjects" Version="2.0.21104.46364" />
+    <PackageReference Include="Be.Stateless.BizTalk.XLang" Version="2.0.21104.45389" />
+    <PackageReference Include="Be.Stateless.BizTalk.Xml" Version="2.0.21104.44011" />
     <PackageReference Include="Be.Stateless.Extensions" Version="2.0.21005.38790" />
     <PackageReference Include="Be.Stateless.Reflection" Version="2.0.21071.48539" />
     <PackageReference Include="Be.Stateless.Security" Version="2.0.21071.48839" />
-    <PackageReference Include="Be.Stateless.Stream" Version="2.0.21071.30174" />
-    <PackageReference Include="Be.Stateless.Xml" Version="2.0.21071.49651" />
+    <PackageReference Include="Be.Stateless.Stream" Version="2.0.21104.42258" />
+    <PackageReference Include="Be.Stateless.Xml" Version="2.0.21104.42878" />
     <PackageReference Include="log4net" Version="2.0.12" />
   </ItemGroup>
 

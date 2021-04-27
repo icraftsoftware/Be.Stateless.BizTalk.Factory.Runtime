@@ -1,12 +1,8 @@
-﻿<Project Sdk="Microsoft.Build.NoTargets/2.0.1">
+﻿<Project Sdk="Microsoft.Build.NoTargets/3.0.4">
 
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
     <IsPackable>false</IsPackable>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <CopyOutputSymbolsToPublishDirectory>false</CopyOutputSymbolsToPublishDirectory>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,7 +10,7 @@
     <PackageReference Include="Be.Stateless.BizTalk.Messaging" Version="2.0.21104.45537" />
     <PackageReference Include="Be.Stateless.BizTalk.Pipeline.MicroComponents" Version="2.0.21115.31121" />
     <PackageReference Include="Be.Stateless.BizTalk.ServiceModel" Version="2.0.21104.46973" />
-    <PackageReference Include="Be.Stateless.BizTalk.Settings" Version="2.0.21072.41386" />
+    <PackageReference Include="Be.Stateless.BizTalk.Settings" Version="2.0.21151.35729" />
     <PackageReference Include="Be.Stateless.BizTalk.Stream" Version="2.0.21104.44616" />
     <PackageReference Include="Be.Stateless.BizTalk.Transform.ExtensionObjects" Version="2.0.21104.46364" />
     <PackageReference Include="Be.Stateless.BizTalk.XLang" Version="2.0.21115.29731" />
@@ -35,5 +31,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+
+  <Target Name="BeforePrepareForBuild" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <PublishDir>$(PublishDir)\$(FileVersion)\</PublishDir>
+    </PropertyGroup>
+  </Target>
 
 </Project>

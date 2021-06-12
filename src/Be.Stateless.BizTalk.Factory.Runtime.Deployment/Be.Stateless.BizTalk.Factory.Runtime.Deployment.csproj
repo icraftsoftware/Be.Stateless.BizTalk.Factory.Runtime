@@ -6,15 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Be.Stateless.BizTalk.Abstractions" Version="2.0.21115.28670" />
-    <PackageReference Include="Be.Stateless.BizTalk.Messaging" Version="2.0.21104.45537" />
-    <PackageReference Include="Be.Stateless.BizTalk.Pipeline.MicroComponents" Version="2.0.21115.31121" />
-    <PackageReference Include="Be.Stateless.BizTalk.ServiceModel" Version="2.0.21104.46973" />
-    <PackageReference Include="Be.Stateless.BizTalk.Settings" Version="2.0.21151.35729" />
-    <PackageReference Include="Be.Stateless.BizTalk.Stream" Version="2.0.21104.44616" />
-    <PackageReference Include="Be.Stateless.BizTalk.Transform.ExtensionObjects" Version="2.0.21104.46364" />
-    <PackageReference Include="Be.Stateless.BizTalk.XLang" Version="2.0.21115.29731" />
-    <PackageReference Include="Be.Stateless.BizTalk.Xml" Version="2.0.21104.44011" />
+    <PackageReference Include="Be.Stateless.BizTalk.Abstractions" Version="2.0.21171.29951" />
+    <PackageReference Include="Be.Stateless.BizTalk.Messaging" Version="2.0.21171.58430" />
+    <PackageReference Include="Be.Stateless.BizTalk.Pipeline.MicroComponents" Version="2.0.21172.20897" />
+    <PackageReference Include="Be.Stateless.BizTalk.ServiceModel" Version="2.0.21172.20423" />
+    <PackageReference Include="Be.Stateless.BizTalk.Settings" Version="2.0.21172.21079" />
+    <PackageReference Include="Be.Stateless.BizTalk.Stream" Version="2.0.21171.57568" />
+    <PackageReference Include="Be.Stateless.BizTalk.Transform.ExtensionObjects" Version="2.0.21171.58785" />
+    <PackageReference Include="Be.Stateless.BizTalk.XLang" Version="2.0.21171.57626" />
+    <PackageReference Include="Be.Stateless.BizTalk.Xml" Version="2.0.21171.56884" />
     <PackageReference Include="Be.Stateless.Extensions" Version="2.0.21005.38790" />
     <PackageReference Include="Be.Stateless.Reflection" Version="2.0.21071.48539" />
     <PackageReference Include="Be.Stateless.Security" Version="2.0.21071.48839" />

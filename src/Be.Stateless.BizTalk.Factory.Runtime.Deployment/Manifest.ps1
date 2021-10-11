@@ -18,7 +18,18 @@
 
 [CmdletBinding()]
 [OutputType([hashtable])]
-param()
+param(
+   [Parameter(Mandatory = $false)]
+   [ValidateNotNullOrEmpty()]
+   [ValidateScript( { Test-Path -Path $_ } )]
+   [string]
+   $LogDirectory = 'C:\Files\Logs',
+
+   [Parameter(Mandatory = $false)]
+   [ValidateSet('ALL', 'DEBUG', 'INFO', 'WARN', 'ERROR', 'FATAL', 'OFF')]
+   [string]
+   $LogLevel = 'DEBUG'
+)
 
 Set-StrictMode -Version Latest
 
@@ -26,10 +37,12 @@ LibraryManifest -Name BizTalk.Factory.Runtime -Description 'BizTalk.Factory''s C
    Assembly -Path (Get-ResourceItem -Name log4net,
       Be.Stateless.Extensions,
       Be.Stateless.Reflection,
+      Be.Stateless.Runtime,
       Be.Stateless.Security,
       Be.Stateless.Stream,
       Be.Stateless.Xml,
       Be.Stateless.BizTalk.Abstractions,
+      Be.Stateless.BizTalk.Factory.Logging,
       Be.Stateless.BizTalk.Messaging,
       Be.Stateless.BizTalk.Pipeline.MicroComponents,
       Be.Stateless.BizTalk.ServiceModel,
@@ -39,5 +52,20 @@ LibraryManifest -Name BizTalk.Factory.Runtime -Description 'BizTalk.Factory''s C
       Be.Stateless.BizTalk.XLang,
       Be.Stateless.BizTalk.Xml
    )
-   XmlConfiguration -Path (Get-ResourceItem -Name machine -Extension .config)
+   EventLogSource -Name 'BizTalk.Factory' -LogName Application
+   File -Path (Get-ResourceItem -Name BTSNTSvc.exe.log4net -Extension .config) `
+      -Destination (Join-Path $env:BTSINSTALLPATH BTSNTSvc.exe.log4net.config), (Join-Path $env:BTSINSTALLPATH BTSNTSvc64.exe.log4net.config)
+   XmlConfigurationAction -Path (Join-Path $env:BTSINSTALLPATH BTSNTSvc.exe.log4net.config) `
+      -Update /log4net/appender[@name="'RollingFileAppender'"]/file `
+      -Attributes @{ value = $(Join-Path $LogDirectory '%property{btshost}.log') }
+   XmlConfigurationAction -Path (Join-Path $env:BTSINSTALLPATH BTSNTSvc64.exe.log4net.config) `
+      -Update /log4net/appender[@name="'RollingFileAppender'"]/file `
+      -Attributes @{ value = $(Join-Path $LogDirectory '%property{btshost}.log') }
+   XmlConfigurationAction -Path (Join-Path $env:BTSINSTALLPATH BTSNTSvc.exe.log4net.config) `
+      -Update /log4net/root/level `
+      -Attributes @{ value = $LogLevel }
+   XmlConfigurationAction -Path (Join-Path $env:BTSINSTALLPATH BTSNTSvc64.exe.log4net.config) `
+      -Update /log4net/root/level `
+      -Attributes @{ value = $LogLevel }
+   XmlConfiguration -Path (Get-ResourceItem -Name BTSNTSvc.exe, machine -Extension .config)
 }

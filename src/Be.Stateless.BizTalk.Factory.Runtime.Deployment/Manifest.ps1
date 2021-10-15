@@ -17,7 +17,7 @@
 #endregion
 
 [CmdletBinding()]
-[OutputType([hashtable])]
+[OutputType([HashTable])]
 param(
    [Parameter(Mandatory = $false)]
    [ValidateNotNullOrEmpty()]

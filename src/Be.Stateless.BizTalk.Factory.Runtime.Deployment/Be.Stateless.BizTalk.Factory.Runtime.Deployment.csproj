@@ -17,8 +17,8 @@
     <PackageReference Include="Be.Stateless.BizTalk.Settings" Version="2.1.22025.21655" />
     <PackageReference Include="Be.Stateless.BizTalk.Stream" Version="2.1.22095.24182" />
     <PackageReference Include="Be.Stateless.BizTalk.Transform.ExtensionObjects" Version="2.1.22095.49334" />
-    <PackageReference Include="Be.Stateless.BizTalk.XLang" Version="2.1.22095.29004" />
-    <PackageReference Include="Be.Stateless.BizTalk.Xml" Version="2.1.22095.23536" />
+    <PackageReference Include="Be.Stateless.BizTalk.XLang" Version="2.1.22125.24580" />
+    <PackageReference Include="Be.Stateless.BizTalk.Xml" Version="2.1.22122.30387" />
     <PackageReference Include="Be.Stateless.Extensions" Version="2.1.22025.20499" />
     <PackageReference Include="Be.Stateless.Reflection" Version="2.1.22095.30556" />
     <PackageReference Include="Be.Stateless.Runtime" Version="2.1.22025.21140" />

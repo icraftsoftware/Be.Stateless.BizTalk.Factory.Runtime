@@ -12,7 +12,7 @@
   <ItemGroup>
     <PackageReference Include="Be.Stateless.BizTalk.Abstractions" Version="2.1.22046.40892" />
     <PackageReference Include="Be.Stateless.BizTalk.Messaging" Version="2.1.22095.48625" />
-    <PackageReference Include="Be.Stateless.BizTalk.Pipeline.MicroComponents" Version="2.1.22095.51991" />
+    <PackageReference Include="Be.Stateless.BizTalk.Pipeline.MicroComponents" Version="2.1.22143.17879" />
     <PackageReference Include="Be.Stateless.BizTalk.ServiceModel" Version="2.1.22095.50681" />
     <PackageReference Include="Be.Stateless.BizTalk.Settings" Version="2.1.22025.21655" />
     <PackageReference Include="Be.Stateless.BizTalk.Stream" Version="2.1.22095.24182" />
